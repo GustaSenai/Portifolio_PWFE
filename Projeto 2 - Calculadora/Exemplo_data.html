@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Exemplo de data | JS </title>
+</head>
+<body>
+    <div class="bloco">
+    <p>Digite o ano de nascimento: </p><br>
+    <input type="number" name="anoNascimento" id="anoNascimento"> <br>
+    <button class="glow-on-hover" onclick="calculaIdade()"> Calcular </button><br>
+    <p id="resultado">Aqui será exibida a resposta: </p>
+    </div>
+    <script>
+        const dataHora = new Date()
+        const anoAtual = dataHora.getFullYear()
+        function calculaIdade(){
+            const anoNascimento = document.getElementById("anoNascimento").value
+            const idade = anoAtual - anoNascimento
+            document.getElementById("resultado").innerText = idade + " anos."
+        }
+    </script>
+    
+</body>
+</html>
