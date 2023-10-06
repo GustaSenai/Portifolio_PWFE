@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+    background-color: beige;
+  
+}
+
+.linha{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+width: 100%;}
+
+
+.cl-25{
+width: 25%;
+display: flex;
+flex-direction: column;
+border:1.5px solid #fdffe4;
+height: auto;
+}
+
+.cl-25 img{
+padding: 20% 15% 10% 15%;
+
+}
+
+
+
+.titulo{
+padding-top: 2.4%;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+width: 100%;
+}
+
+.descricao{
+    padding: 5% 10% 20% 10%;
+}
+
+
+header{
+    height: 80px;
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid #be9e44;
+    
+}
+
+.logo{
+width: 100px;
+background-color: #000;
+}
+
+footer{
+
+    height: 80px;
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid #be9e44;
+}
+.legenda{
+    background-color: #000;
+    color: aliceblue;
+}
+
+@media screen and (max-width: 1128px) {
+
+    .coluna {
+        width:48%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .coluna {
+        width:100%;
+        margin: 0;
+    }
+
+}
